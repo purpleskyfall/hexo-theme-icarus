@@ -62,4 +62,9 @@
         });
     }
 
+    // Donate
+    $('.reward-btn').on('click', function () {
+        $('.money-code').fadeToggle()
+    })
+
 })(jQuery);

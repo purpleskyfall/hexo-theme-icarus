@@ -30,12 +30,17 @@
                 </div>
             <% } %>
             <%- post.content %>
+
+            <% if (!index && post.layout != 'page') { %>
+                <%- partial('donate/index', { post: post }) %>
+            <% } %>
+            
         <% } %>
         </div>
-        <footer class="article-footer">
+        <!-- <footer class="article-footer">
             <%- partial('share/index', { post: post }) %>
             <%- partial('comment/counter', { post: post }) %>
-        </footer>
+        </footer> -->
     </div>
     <% if (!index) { %>
         <%- partial('post/nav') %>
