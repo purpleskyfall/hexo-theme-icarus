@@ -31,7 +31,7 @@
             <% } %>
             <%- post.content %>
 
-            <% if (!index && post.layout != 'page') { %>
+            <% if (!index && post.layout != 'page' && donate) { %>
                 <%- partial('post/donate', { post: post }) %>
             <% } %>
             
